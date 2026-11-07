@@ -1,0 +1,20 @@
+HELP.md
+# Maven
+target/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# Environment variables and secrets
+.env
+.env.*
+application-local.properties
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #2d3436;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #636e72;
+}
+
+.today-section,
+.all-birthdays-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#current-date {
+    color: #636e72;
+    margin-bottom: 20px;
+}
+
+.birthday-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.birthday-card {
+    background: #f8f9fc;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.birthday-card strong {
+    font-size: 16px;
+}
+
+.birthday-card span {
+    color: #636e72;
+    font-size: 14px;
+}
+
+.empty-message {
+    color: #636e72;
+    padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15px auto;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .today-section,
+    .all-birthdays-section {
+        padding: 18px;
+    }
+}
+
+.add-birthday-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background: #5541d7;
+}
+
+#form-message {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.delete-button {
+    background: #ff7675;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #d63031;
+}
+
+.edit-button {
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background: #0767b1;
+}
+
+#edit-dialog {
+    width: min(90%, 450px);
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+#edit-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#edit-dialog h2 {
+    margin-bottom: 20px;
+}
+
+.dialog-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dialog-actions button {
+    flex: 1;
+}
+
+#cancel-edit {
+    background: #636e72;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
